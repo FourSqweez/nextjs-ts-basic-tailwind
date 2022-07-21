@@ -14,12 +14,25 @@
    height: 100%;
    display: flex;
    justify-content: center;
+   align-items: center;
    border-bottom: 1px solid gray;
    margin: 0;
    padding: 0;
    padding: 0 20px;
 }
+.nav-list{
+   padding-inline-start: 0 5px;
+   margin: 0 20px;
+}
 
 .list {
+   font-weight: bold;
+}
+
+.list.active{
+   color: red;
+}
+
+.post-link {
    font-weight: bold;
 }
