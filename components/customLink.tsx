@@ -13,12 +13,12 @@ function CustomLink({ href, children, ...props }: Props) {
 	console.log('class name : ', childClassName)
 	const className =
 		href === asPath
-			? `${childClassName} active ${console.log('Url', href)}`
+			? `${childClassName} text-red-500 ${console.log('Url', href)}`
 			: childClassName
 
 	return (
 		<Link href={href} {...props}>
-			{cloneElement(child, { className: className|| null })}
+			{cloneElement(child, { className: className || null })}
 		</Link>
 	)
 }
