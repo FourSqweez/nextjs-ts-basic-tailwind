@@ -1,10 +1,12 @@
+import Layout from '../components/layout'
+import { ReactElement } from 'react'
 
-function about() {
-	return (
-		<>
-			<div className="container">About page</div>
-		</>
-	)
+function About() {
+	return <div>About page</div>
 }
 
-export default about
+About.getLayout = function getLayout(page: ReactElement) {
+	return <Layout>{page}</Layout>
+}
+
+export default About
