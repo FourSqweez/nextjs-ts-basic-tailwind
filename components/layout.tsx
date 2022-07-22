@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './navbar'
 
-function layout({ children }: { children?: React.ReactNode }) {
+function Layout({ children }: { children?: React.ReactNode }) {
 	return (
 		<>
 			<Navbar />
-			{children}
+			<div className="container">{children}</div>
 		</>
 	)
 }
 
-export default layout
+export default Layout
